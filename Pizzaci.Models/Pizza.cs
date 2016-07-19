@@ -27,7 +27,7 @@ namespace Pizzaci.Models
                 fiyat += PizzaKenar.Fiyat;
                 for (int i = 0; i < PizzaMalzeme.Count; i++)
                 {
-                    fiyat += (decimal)0.5;
+                    fiyat += PizzaMalzeme[i].Fiyat;
                 }
                 fiyat *= PizzaEbat.Carpan;
                 return fiyat;
@@ -37,9 +37,9 @@ namespace Pizzaci.Models
         {
             string malzemeler = "";
             foreach (var item in PizzaMalzeme)
-                malzemeler += item + ",";
+                malzemeler += item.Malzeme_Adi + ",";
 
-            return $"{PizzaTur.PizzaTurAdi} - { PizzaEbat.Ebat} - {PizzaKenar.KenarTurAdi} - {malzemeler}";
+            return $"{PizzaTur.PizzaTurAdi}/{ PizzaEbat.Ebat}/{PizzaKenar.KenarTurAdi} Malzemeler : {malzemeler}";
         }
     }
 }

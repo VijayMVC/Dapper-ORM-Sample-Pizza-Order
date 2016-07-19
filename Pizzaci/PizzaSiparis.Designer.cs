@@ -35,7 +35,7 @@
             this.Tutar = new MetroFramework.Controls.MetroLabel();
             this.btnSepeteEkle = new MetroFramework.Controls.MetroButton();
             this.txtTutar = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.lblTutar = new MetroFramework.Controls.MetroLabel();
             this.btnSiparisiOnayla = new MetroFramework.Controls.MetroButton();
             this.cmbEbatlar = new MetroFramework.Controls.MetroComboBox();
             this.cmbPizzalar = new MetroFramework.Controls.MetroComboBox();
@@ -49,12 +49,13 @@
             // 
             // lstSiparis
             // 
+            this.lstSiparis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstSiparis.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lstSiparis.FormattingEnabled = true;
             this.lstSiparis.ItemHeight = 17;
             this.lstSiparis.Location = new System.Drawing.Point(375, 63);
             this.lstSiparis.Name = "lstSiparis";
-            this.lstSiparis.Size = new System.Drawing.Size(487, 276);
+            this.lstSiparis.Size = new System.Drawing.Size(487, 274);
             this.lstSiparis.TabIndex = 5;
             // 
             // btnHesapla
@@ -134,6 +135,7 @@
             // 
             // btnSepeteEkle
             // 
+            this.btnSepeteEkle.Enabled = false;
             this.btnSepeteEkle.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnSepeteEkle.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.btnSepeteEkle.Location = new System.Drawing.Point(385, 380);
@@ -145,6 +147,7 @@
             this.btnSepeteEkle.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnSepeteEkle.UseSelectable = true;
             this.btnSepeteEkle.UseStyleColors = true;
+            this.btnSepeteEkle.Click += new System.EventHandler(this.btnSepeteEkle_Click);
             // 
             // txtTutar
             // 
@@ -160,6 +163,7 @@
             this.txtTutar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtTutar.CustomButton.UseSelectable = true;
             this.txtTutar.CustomButton.Visible = false;
+            this.txtTutar.Enabled = false;
             this.txtTutar.Lines = new string[0];
             this.txtTutar.Location = new System.Drawing.Point(299, 383);
             this.txtTutar.MaxLength = 32767;
@@ -178,21 +182,21 @@
             this.txtTutar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtTutar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel13
+            // lblTutar
             // 
-            this.metroLabel13.AutoSize = true;
-            this.metroLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.metroLabel13.ForeColor = System.Drawing.Color.DarkGray;
-            this.metroLabel13.Location = new System.Drawing.Point(799, 346);
-            this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(51, 19);
-            this.metroLabel13.TabIndex = 0;
-            this.metroLabel13.Text = "lblTutar";
-            this.metroLabel13.UseCustomBackColor = true;
-            this.metroLabel13.UseCustomForeColor = true;
+            this.lblTutar.AutoSize = true;
+            this.lblTutar.BackColor = System.Drawing.Color.Transparent;
+            this.lblTutar.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblTutar.Location = new System.Drawing.Point(695, 346);
+            this.lblTutar.Name = "lblTutar";
+            this.lblTutar.Size = new System.Drawing.Size(0, 0);
+            this.lblTutar.TabIndex = 0;
+            this.lblTutar.UseCustomBackColor = true;
+            this.lblTutar.UseCustomForeColor = true;
             // 
             // btnSiparisiOnayla
             // 
+            this.btnSiparisiOnayla.Enabled = false;
             this.btnSiparisiOnayla.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnSiparisiOnayla.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.btnSiparisiOnayla.Location = new System.Drawing.Point(653, 380);
@@ -204,6 +208,7 @@
             this.btnSiparisiOnayla.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnSiparisiOnayla.UseSelectable = true;
             this.btnSiparisiOnayla.UseStyleColors = true;
+            this.btnSiparisiOnayla.Click += new System.EventHandler(this.btnSiparisiOnayla_Click);
             // 
             // cmbEbatlar
             // 
@@ -324,7 +329,7 @@
             this.Controls.Add(this.btnHesapla);
             this.Controls.Add(this.Tutar);
             this.Controls.Add(this.metroLabel11);
-            this.Controls.Add(this.metroLabel13);
+            this.Controls.Add(this.lblTutar);
             this.Controls.Add(this.lstSiparis);
             this.Name = "PizzaSiparis";
             this.Resizable = false;
@@ -345,7 +350,7 @@
         private MetroFramework.Controls.MetroLabel Tutar;
         private MetroFramework.Controls.MetroButton btnSepeteEkle;
         private MetroFramework.Controls.MetroTextBox txtTutar;
-        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private MetroFramework.Controls.MetroLabel lblTutar;
         private MetroFramework.Controls.MetroButton btnSiparisiOnayla;
         private MetroFramework.Controls.MetroComboBox cmbEbatlar;
         private MetroFramework.Controls.MetroComboBox cmbPizzalar;

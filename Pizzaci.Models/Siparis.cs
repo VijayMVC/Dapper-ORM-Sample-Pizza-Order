@@ -8,12 +8,15 @@ namespace Pizzaci.Models
 {
     public class Siparis
     {
+        public int SiparisId { get; set; }
+
+        public int SepetId { get; set; }
         public Pizza Pizza { get; set; }
         public int Adet { get; set; }
         public decimal Fiyat => Pizza.Fiyat*Adet;
         public override string ToString()
         {
-            return Pizza.ToString() +" Adet :" +Adet +" Fiyat : "+Fiyat;
+            return Pizza.ToString() +" Adet  : " +Adet +" Fiyat  : "+Fiyat.ToString("C");
         } 
     }
 }

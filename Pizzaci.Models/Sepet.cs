@@ -13,6 +13,9 @@ namespace Pizzaci.Models
             Siparisler = new List<Siparis>();
         }
 
+        public int SepetId { get; set; }
+        public bool durum { get; set; }
+        public DateTime tarih { get; set; }
         public List<Siparis> Siparisler { get; set; }
 
         public decimal GenelToplam

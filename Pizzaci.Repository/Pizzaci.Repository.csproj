@@ -44,9 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationSettings.cs" />
-    <Compile Include="GeneralRepository.cs" />
+    <Compile Include="EbatRepository.cs" />
+    <Compile Include="IGenericRepository.cs" />
+    <Compile Include="KenarTurRepository.cs" />
+    <Compile Include="MalzemeRepository.cs" />
+    <Compile Include="PizzaTurRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SepetRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pizzaci.Models\Pizzaci.Models.csproj">
@@ -55,7 +59,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

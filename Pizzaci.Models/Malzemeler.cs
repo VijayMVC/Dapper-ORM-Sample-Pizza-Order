@@ -10,6 +10,6 @@ namespace Pizzaci.Models
     {
         public int MalzemeId { get; set; }
         public string Malzeme_Adi { get; set; }
-        public int Fiyat { get; set; }
+        public decimal Fiyat { get; set; }
     }
 }
