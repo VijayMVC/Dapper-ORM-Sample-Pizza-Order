@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzaci", "Pizzaci\Pizzaci.csproj", "{504C61A8-FD78-47A8-AF61-B8A446EF1306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzaci.Models", "Pizzaci.Models\Pizzaci.Models.csproj", "{2B68FAA4-98C0-4E60-ADDB-8791E7F1597B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzaci.Repository", "Pizzaci.Repository\Pizzaci.Repository.csproj", "{9CFE605C-C67C-48CF-A57B-0839580EDD80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{504C61A8-FD78-47A8-AF61-B8A446EF1306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504C61A8-FD78-47A8-AF61-B8A446EF1306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504C61A8-FD78-47A8-AF61-B8A446EF1306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504C61A8-FD78-47A8-AF61-B8A446EF1306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B68FAA4-98C0-4E60-ADDB-8791E7F1597B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B68FAA4-98C0-4E60-ADDB-8791E7F1597B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B68FAA4-98C0-4E60-ADDB-8791E7F1597B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B68FAA4-98C0-4E60-ADDB-8791E7F1597B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CFE605C-C67C-48CF-A57B-0839580EDD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFE605C-C67C-48CF-A57B-0839580EDD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFE605C-C67C-48CF-A57B-0839580EDD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFE605C-C67C-48CF-A57B-0839580EDD80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
